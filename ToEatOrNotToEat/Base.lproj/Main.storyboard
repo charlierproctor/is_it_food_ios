@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="MyriadPro-Regular.otf">
@@ -27,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owI-8u-nA0" customClass="PBButton" customModule="ToEatOrNotToEat" customModuleProvider="target">
-                                <rect key="frame" x="209" y="458" width="181" height="57"/>
+                                <rect key="frame" x="209" y="436" width="181" height="57"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="25"/>
                                 <state key="normal" title="Check Now">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,9 +71,9 @@
                                     <constraint firstAttribute="height" constant="150" id="kh8-4w-bVp"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Left to Check" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ver-tq-LKJ">
-                                <rect key="frame" x="218" y="338" width="164" height="20"/>
-                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote of the Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ver-tq-LKJ">
+                                <rect key="frame" x="28" y="338" width="544" height="18"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -80,10 +81,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="owI-8u-nA0" firstAttribute="top" secondItem="ver-tq-LKJ" secondAttribute="bottom" constant="100" id="GP0-ml-e9Q"/>
-                            <constraint firstAttribute="centerX" secondItem="ver-tq-LKJ" secondAttribute="centerX" id="Hdx-4W-4Xq"/>
+                            <constraint firstItem="owI-8u-nA0" firstAttribute="top" secondItem="ver-tq-LKJ" secondAttribute="bottom" constant="80" id="GP0-ml-e9Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ver-tq-LKJ" secondAttribute="trailing" constant="12" id="VVQ-sM-syJ"/>
                             <constraint firstItem="49w-jv-y4M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="iL4-eF-mcZ"/>
                             <constraint firstAttribute="centerX" secondItem="49w-jv-y4M" secondAttribute="centerX" constant="1" id="kSg-XL-ELR"/>
+                            <constraint firstItem="ver-tq-LKJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="q0l-z7-0Qh"/>
                             <constraint firstItem="ver-tq-LKJ" firstAttribute="top" secondItem="gmH-IG-Eo0" secondAttribute="bottom" constant="35" id="sZh-yG-pTX"/>
                             <constraint firstAttribute="centerX" secondItem="gmH-IG-Eo0" secondAttribute="centerX" id="t3I-F2-lD4"/>
                             <constraint firstItem="gmH-IG-Eo0" firstAttribute="top" secondItem="49w-jv-y4M" secondAttribute="bottom" constant="31.5" id="vJ1-TL-l68"/>
