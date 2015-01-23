@@ -64,20 +64,22 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
-        if arc4random() % 2 == 0 {
-            answerLabel.text = "YES"
-            answerLabel.font = answerLabel.font.fontWithSize(40)
-        } else {
-            answerLabel.text = "NO"
-            answerLabel.font = answerLabel.font.fontWithSize(40)
-        }
+        picker.dismissViewControllerAnimated(true, completion: {
+            if arc4random() % 2 == 0 {
+                self.view.backgroundColor = UIColor.greenColor()
+                self.answerLabel.text = "YES"
+                self.answerLabel.font = self.answerLabel.font.fontWithSize(40)
+            } else {
+                self.view.backgroundColor = UIColor.redColor()
+                self.answerLabel.text = "NO"
+                self.answerLabel.font = self.answerLabel.font.fontWithSize(40)
+            }
+            self.getQuote { (author, text) -> Void in
+                self.quoteLabel.text = text
+            }
+            self.imageView.image = image.cropToSquare()
+        })
         
-        getQuote { (author, text) -> Void in
-            self.quoteLabel.text = text
-        }
-        
-        imageView.image = image.cropToSquare()
-        picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
