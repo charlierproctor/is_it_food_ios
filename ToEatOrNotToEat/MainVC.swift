@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var quoteLabel: UILabel!
@@ -17,6 +17,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +26,12 @@ class MainVC: UIViewController {
     }
 
     @IBAction func checkButtonAction(sender: AnyObject) {
+        var picker: UIImagePickerController = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .Camera
+        picker.cameraDevice = .Front
+        picker.showsCameraControls = true
+        self.presentViewController(picker, animated: true, completion: nil)
     }
 
 }
