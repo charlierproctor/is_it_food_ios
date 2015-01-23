@@ -51,7 +51,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             picker.sourceType = .Camera
-            picker.cameraDevice = .Front
+            picker.cameraDevice = .Rear
             picker.showsCameraControls = true
         } else {
             picker.sourceType = .PhotoLibrary
@@ -76,7 +76,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
             self.quoteLabel.text = text
         }
         
-        imageView.image = image
+        imageView.image = image.cropToSquare()
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }
