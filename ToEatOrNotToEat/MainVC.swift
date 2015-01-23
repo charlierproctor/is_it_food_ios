@@ -62,10 +62,6 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         presentViewController(constructImagePickerController(), animated: true, completion: nil)
     }
     
-    @IBAction func swipeLeft(sender: AnyObject) {
-        presentViewController(constructImagePickerController(), animated: true, completion: nil)
-    }
-    
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
         if arc4random() % 2 == 0 {
