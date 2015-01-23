@@ -70,8 +70,10 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         
         if arc4random() % 2 == 0 {
             answerLabel.text = "YES"
+            answerLabel.font = answerLabel.font.fontWithSize(40)
         } else {
             answerLabel.text = "NO"
+            answerLabel.font = answerLabel.font.fontWithSize(40)
         }
         
         getQuote { (author, text) -> Void in
