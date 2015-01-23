@@ -1,6 +1,6 @@
 //
 //  PBButton.swift
-//  ToEatOrNotToEat
+//  IsItFoodTests
 //
 //  Created by Charlie Proctor on 1/22/15.
 //  Copyright (c) 2015 Pushbyte Development Group. All rights reserved.
