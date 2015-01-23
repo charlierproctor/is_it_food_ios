@@ -81,6 +81,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
                 self.quoteLabel.text = text
             }
             self.imageView.image = image.cropToSquare()
+            self.checkButton.setTitle("Check Again", forState: .Normal)
             activityIndicatorView.hide()
         })
         
