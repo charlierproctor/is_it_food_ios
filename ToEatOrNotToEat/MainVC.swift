@@ -41,17 +41,13 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         presentViewController(constructImagePickerController(), animated: true, completion: nil)
     }
     
+    @IBAction func swipeLeft(sender: AnyObject) {
+        presentViewController(constructImagePickerController(), animated: true, completion: nil)
+    }
+    
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         answerLabel.text = "No"
         picker.dismissViewControllerAnimated(true, completion: nil)
-    }
-
-    @IBAction func swipeLeft(sender: AnyObject) {
-        var parent = UIViewController()
-        parent.addChildViewController(self)
-        var picker = constructImagePickerController()
-        parent.addChildViewController(picker)
-        parent.transitionFromViewController(self, toViewController: picker, duration: 1000, options: UIViewAnimationOptions.CurveEaseInOut, animations: nil, completion: nil)
     }
 }
 
