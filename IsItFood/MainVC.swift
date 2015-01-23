@@ -39,7 +39,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     }
 
     func getQuote(onSuccess:(author:String, text:String)->Void){
-        Alamofire.request(.GET, "http://toeatornottoeat.herokuapp.com")
+        Alamofire.request(.GET, "http://isitfood.herokuapp.com")
             .responseJSON { (_, _, res, _) in
                 if let json = res as? [String:String] {
                     onSuccess(author: json["author"]!,text: json["text"]!)
