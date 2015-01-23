@@ -28,9 +28,15 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     @IBAction func checkButtonAction(sender: AnyObject) {
         var picker: UIImagePickerController = UIImagePickerController()
         picker.delegate = self
-        picker.sourceType = .Camera
-        picker.cameraDevice = .Front
-        picker.showsCameraControls = true
+
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            picker.sourceType = .Camera
+            picker.cameraDevice = .Front
+            picker.showsCameraControls = true
+        } else {
+            picker.sourceType = .PhotoLibrary
+        }
+
         self.presentViewController(picker, animated: true, completion: nil)
     }
 
