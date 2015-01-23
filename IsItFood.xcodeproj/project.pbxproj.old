@@ -12,7 +12,7 @@
 		3E48EE031A71E7A40060A3E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE011A71E7A40060A3E6 /* Main.storyboard */; };
 		3E48EE051A71E7A40060A3E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE041A71E7A40060A3E6 /* Images.xcassets */; };
 		3E48EE081A71E7A40060A3E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE061A71E7A40060A3E6 /* LaunchScreen.xib */; };
-		3E48EE141A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48EE131A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift */; };
+		3E48EE141A71E7A40060A3E6 /* IsItFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48EE131A71E7A40060A3E6 /* IsItFoodTests.swift */; };
 		3E48EE271A71F7780060A3E6 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE1F1A71F7780060A3E6 /* MyriadPro-Regular.otf */; };
 		3E48EE281A71F7780060A3E6 /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE201A71F7780060A3E6 /* MyriadPro-Semibold.otf */; };
 		3E48EE291A71F7780060A3E6 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE211A71F7780060A3E6 /* OpenSans-Bold.ttf */; };
@@ -34,7 +34,7 @@
 			containerPortal = 3E48EDF01A71E7A40060A3E6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3E48EDF71A71E7A40060A3E6;
-			remoteInfo = ToEatOrNotToEat;
+			remoteInfo = IsItFood;
 		};
 		3E48EE371A7202680060A3E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,7 +97,7 @@
 		3E48EE071A71E7A40060A3E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3E48EE0D1A71E7A40060A3E6 /* IsItFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsItFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E48EE121A71E7A40060A3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E48EE131A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToEatOrNotToEatTests.swift; sourceTree = "<group>"; };
+		3E48EE131A71E7A40060A3E6 /* IsItFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsItFoodTests.swift; sourceTree = "<group>"; };
 		3E48EE1F1A71F7780060A3E6 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		3E48EE201A71F7780060A3E6 /* MyriadPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.otf"; sourceTree = "<group>"; };
 		3E48EE211A71F7780060A3E6 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		3E48EDEF1A71E7A40060A3E6 = {
 			isa = PBXGroup;
 			children = (
-				3E48EDFA1A71E7A40060A3E6 /* ToEatOrNotToEat */,
-				3E48EE101A71E7A40060A3E6 /* ToEatOrNotToEatTests */,
+				3E48EDFA1A71E7A40060A3E6 /* IsItFood */,
+				3E48EE101A71E7A40060A3E6 /* IsItFoodTests */,
 				3E48EDF91A71E7A40060A3E6 /* Products */,
 				3E48EE311A7202680060A3E6 /* Alamofire.xcodeproj */,
 			);
@@ -150,7 +150,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3E48EDFA1A71E7A40060A3E6 /* ToEatOrNotToEat */ = {
+		3E48EDFA1A71E7A40060A3E6 /* IsItFood */ = {
 			isa = PBXGroup;
 			children = (
 				3E48EE1D1A71F7780060A3E6 /* Assets */,
@@ -164,7 +164,7 @@
 				3E48EE061A71E7A40060A3E6 /* LaunchScreen.xib */,
 				3E48EDFB1A71E7A40060A3E6 /* Supporting Files */,
 			);
-			path = ToEatOrNotToEat;
+			path = IsItFood;
 			sourceTree = "<group>";
 		};
 		3E48EDFB1A71E7A40060A3E6 /* Supporting Files */ = {
@@ -175,13 +175,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3E48EE101A71E7A40060A3E6 /* ToEatOrNotToEatTests */ = {
+		3E48EE101A71E7A40060A3E6 /* IsItFoodTests */ = {
 			isa = PBXGroup;
 			children = (
-				3E48EE131A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift */,
+				3E48EE131A71E7A40060A3E6 /* IsItFoodTests.swift */,
 				3E48EE111A71E7A40060A3E6 /* Supporting Files */,
 			);
-			path = ToEatOrNotToEatTests;
+			path = IsItFoodTests;
 			sourceTree = "<group>";
 		};
 		3E48EE111A71E7A40060A3E6 /* Supporting Files */ = {
@@ -244,7 +244,7 @@
 				3E48EE541A7214700060A3E6 /* PBXTargetDependency */,
 			);
 			name = IsItFood;
-			productName = ToEatOrNotToEat;
+			productName = IsItFood;
 			productReference = 3E48EDF81A71E7A40060A3E6 /* IsItFood.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -262,7 +262,7 @@
 				3E48EE0F1A71E7A40060A3E6 /* PBXTargetDependency */,
 			);
 			name = IsItFoodTests;
-			productName = ToEatOrNotToEatTests;
+			productName = IsItFoodTests;
 			productReference = 3E48EE0D1A71E7A40060A3E6 /* IsItFoodTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -379,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E48EE141A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift in Sources */,
+				3E48EE141A71E7A40060A3E6 /* IsItFoodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = ToEatOrNotToEat/Info.plist;
+				INFOPLIST_FILE = IsItFood/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = IsItFood;
@@ -521,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = ToEatOrNotToEat/Info.plist;
+				INFOPLIST_FILE = IsItFood/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = IsItFood;
@@ -540,10 +540,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ToEatOrNotToEatTests/Info.plist;
+				INFOPLIST_FILE = IsItFoodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = IsItFoodTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToEatOrNotToEat.app/ToEatOrNotToEat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsItFood.app/IsItFood";
 			};
 			name = Debug;
 		};
@@ -555,10 +555,10 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ToEatOrNotToEatTests/Info.plist;
+				INFOPLIST_FILE = IsItFoodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = IsItFoodTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToEatOrNotToEat.app/ToEatOrNotToEat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsItFood.app/IsItFood";
 			};
 			name = Release;
 		};
