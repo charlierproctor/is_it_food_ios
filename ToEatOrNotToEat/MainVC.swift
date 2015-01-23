@@ -24,6 +24,10 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         imageView.layer.borderWidth = 1.0
         imageView.layer.borderColor = UIColor.whiteColor().CGColor
         imageView.layer.backgroundColor = UIColor.greenColor().CGColor
+        
+        getQuote { (author, text) -> Void in
+            self.quoteLabel.text = text
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +35,15 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         // Dispose of any resources that can be recreated.
     }
 
+    func getQuote(onSuccess:(author:String, text:String)->Void){
+        Alamofire.request(.GET, "http://toeatornottoeat.herokuapp.com")
+            .responseJSON { (_, _, res, _) in
+                if let json = res as? [String:String] {
+                    onSuccess(author: json["author"]!,text: json["text"]!)
+                }
+        }
+    }
+    
     func constructImagePickerController()->UIImagePickerController {
         var picker: UIImagePickerController = UIImagePickerController()
         picker.delegate = self
@@ -54,6 +67,11 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         answerLabel.text = "NO"
+        
+        getQuote { (author, text) -> Void in
+            self.quoteLabel.text = text
+        }
+        
         imageView.image = image
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
