@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Darwin
 
 class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -66,7 +67,12 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     }
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        answerLabel.text = "NO"
+        
+        if arc4random() % 2 == 0 {
+            answerLabel.text = "YES"
+        } else {
+            answerLabel.text = "NO"
+        }
         
         getQuote { (author, text) -> Void in
             self.quoteLabel.text = text
