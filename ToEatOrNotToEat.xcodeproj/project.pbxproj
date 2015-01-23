@@ -13,6 +13,14 @@
 		3E48EE051A71E7A40060A3E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE041A71E7A40060A3E6 /* Images.xcassets */; };
 		3E48EE081A71E7A40060A3E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE061A71E7A40060A3E6 /* LaunchScreen.xib */; };
 		3E48EE141A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48EE131A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift */; };
+		3E48EE271A71F7780060A3E6 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE1F1A71F7780060A3E6 /* MyriadPro-Regular.otf */; };
+		3E48EE281A71F7780060A3E6 /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE201A71F7780060A3E6 /* MyriadPro-Semibold.otf */; };
+		3E48EE291A71F7780060A3E6 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE211A71F7780060A3E6 /* OpenSans-Bold.ttf */; };
+		3E48EE2A1A71F7780060A3E6 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE221A71F7780060A3E6 /* OpenSans-Light.ttf */; };
+		3E48EE2B1A71F7780060A3E6 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE231A71F7780060A3E6 /* OpenSans-Regular.ttf */; };
+		3E48EE2C1A71F7780060A3E6 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE241A71F7780060A3E6 /* Raleway-Light.ttf */; };
+		3E48EE2D1A71F7780060A3E6 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE251A71F7780060A3E6 /* Raleway-Regular.ttf */; };
+		3E48EE2E1A71F7780060A3E6 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E48EE261A71F7780060A3E6 /* Raleway-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		3E48EE0D1A71E7A40060A3E6 /* ToEatOrNotToEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToEatOrNotToEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E48EE121A71E7A40060A3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E48EE131A71E7A40060A3E6 /* ToEatOrNotToEatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToEatOrNotToEatTests.swift; sourceTree = "<group>"; };
+		3E48EE1F1A71F7780060A3E6 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		3E48EE201A71F7780060A3E6 /* MyriadPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.otf"; sourceTree = "<group>"; };
+		3E48EE211A71F7780060A3E6 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		3E48EE221A71F7780060A3E6 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		3E48EE231A71F7780060A3E6 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		3E48EE241A71F7780060A3E6 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		3E48EE251A71F7780060A3E6 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		3E48EE261A71F7780060A3E6 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 		3E48EDFA1A71E7A40060A3E6 /* ToEatOrNotToEat */ = {
 			isa = PBXGroup;
 			children = (
+				3E48EE1D1A71F7780060A3E6 /* Assets */,
 				3E48EDFD1A71E7A40060A3E6 /* AppDelegate.swift */,
 				3E48EDFF1A71E7A40060A3E6 /* MainVC.swift */,
 				3E48EE011A71E7A40060A3E6 /* Main.storyboard */,
@@ -110,6 +127,29 @@
 				3E48EE121A71E7A40060A3E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E48EE1D1A71F7780060A3E6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3E48EE1E1A71F7780060A3E6 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3E48EE1E1A71F7780060A3E6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3E48EE1F1A71F7780060A3E6 /* MyriadPro-Regular.otf */,
+				3E48EE201A71F7780060A3E6 /* MyriadPro-Semibold.otf */,
+				3E48EE211A71F7780060A3E6 /* OpenSans-Bold.ttf */,
+				3E48EE221A71F7780060A3E6 /* OpenSans-Light.ttf */,
+				3E48EE231A71F7780060A3E6 /* OpenSans-Regular.ttf */,
+				3E48EE241A71F7780060A3E6 /* Raleway-Light.ttf */,
+				3E48EE251A71F7780060A3E6 /* Raleway-Regular.ttf */,
+				3E48EE261A71F7780060A3E6 /* Raleway-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +234,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E48EE031A71E7A40060A3E6 /* Main.storyboard in Resources */,
+				3E48EE2D1A71F7780060A3E6 /* Raleway-Regular.ttf in Resources */,
 				3E48EE081A71E7A40060A3E6 /* LaunchScreen.xib in Resources */,
+				3E48EE2A1A71F7780060A3E6 /* OpenSans-Light.ttf in Resources */,
+				3E48EE291A71F7780060A3E6 /* OpenSans-Bold.ttf in Resources */,
+				3E48EE281A71F7780060A3E6 /* MyriadPro-Semibold.otf in Resources */,
+				3E48EE271A71F7780060A3E6 /* MyriadPro-Regular.otf in Resources */,
+				3E48EE2C1A71F7780060A3E6 /* Raleway-Light.ttf in Resources */,
+				3E48EE2B1A71F7780060A3E6 /* OpenSans-Regular.ttf in Resources */,
 				3E48EE051A71E7A40060A3E6 /* Images.xcassets in Resources */,
+				3E48EE2E1A71F7780060A3E6 /* Raleway-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
