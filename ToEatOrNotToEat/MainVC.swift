@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -23,7 +24,6 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         imageView.layer.borderWidth = 1.0
         imageView.layer.borderColor = UIColor.whiteColor().CGColor
         imageView.layer.backgroundColor = UIColor.greenColor().CGColor
-
     }
 
     override func didReceiveMemoryWarning() {
