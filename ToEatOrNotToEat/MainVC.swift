@@ -25,10 +25,10 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func checkButtonAction(sender: AnyObject) {
+    func constructImagePickerController()->UIImagePickerController {
         var picker: UIImagePickerController = UIImagePickerController()
         picker.delegate = self
-
+        
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             picker.sourceType = .Camera
             picker.cameraDevice = .Front
@@ -36,8 +36,10 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         } else {
             picker.sourceType = .PhotoLibrary
         }
-        
-        self.presentViewController(picker, animated: true, completion: nil)
+        return picker
+    }
+    @IBAction func checkButtonAction(sender: AnyObject) {
+        self.presentViewController(constructImagePickerController(), animated: true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
@@ -45,5 +47,8 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func swipeLeft(sender: AnyObject) {
+        navigationController?.pushViewController(constructImagePickerController(), animated: true)
+    }
 }
 
