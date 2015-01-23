@@ -36,8 +36,13 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         } else {
             picker.sourceType = .PhotoLibrary
         }
-
+        
         self.presentViewController(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        answerLabel.text = "No"
+        picker.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }
