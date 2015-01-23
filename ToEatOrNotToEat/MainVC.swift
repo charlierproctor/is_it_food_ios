@@ -18,6 +18,12 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        imageView.clipsToBounds = true
+        imageView.layer.borderWidth = 1.0
+        imageView.layer.borderColor = UIColor.whiteColor().CGColor
+        imageView.layer.backgroundColor = UIColor.greenColor().CGColor
+
     }
 
     override func didReceiveMemoryWarning() {
