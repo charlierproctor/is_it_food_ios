@@ -13,6 +13,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var checkButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,8 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     }
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        answerLabel.text = "No"
+        answerLabel.text = "NO"
+        imageView.image = image
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }

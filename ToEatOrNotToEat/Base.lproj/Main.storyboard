@@ -66,6 +66,7 @@
                     <connections>
                         <outlet property="answerLabel" destination="49w-jv-y4M" id="CQc-7k-fMP"/>
                         <outlet property="checkButton" destination="owI-8u-nA0" id="yzJ-Wx-KoP"/>
+                        <outlet property="imageView" destination="gmH-IG-Eo0" id="vrF-6d-C8P"/>
                         <outlet property="quoteLabel" destination="ver-tq-LKJ" id="xWZ-o5-eZd"/>
                     </connections>
                 </viewController>
