@@ -17,7 +17,6 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +38,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         return picker
     }
     @IBAction func checkButtonAction(sender: AnyObject) {
-        self.presentViewController(constructImagePickerController(), animated: true, completion: nil)
+        presentViewController(constructImagePickerController(), animated: true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
@@ -48,7 +47,11 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     }
 
     @IBAction func swipeLeft(sender: AnyObject) {
-        navigationController?.pushViewController(constructImagePickerController(), animated: true)
+        var parent = UIViewController()
+        parent.addChildViewController(self)
+        var picker = constructImagePickerController()
+        parent.addChildViewController(picker)
+        parent.transitionFromViewController(self, toViewController: picker, duration: 1000, options: UIViewAnimationOptions.CurveEaseInOut, animations: nil, completion: nil)
     }
 }
 
