@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owI-8u-nA0" customClass="PBButton" customModule="IsItFood" customModuleProvider="target">
-                                <rect key="frame" x="209" y="428" width="181" height="57"/>
+                                <rect key="frame" x="209" y="448" width="181" height="57"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="25"/>
                                 <state key="normal" title="Check Now">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,26 +60,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Food?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-jv-y4M">
-                                <rect key="frame" x="251" y="100" width="95.5" height="22"/>
+                                <rect key="frame" x="251" y="70" width="95.5" height="22"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmH-IG-Eo0">
-                                <rect key="frame" x="225" y="153" width="150" height="150"/>
+                                <rect key="frame" x="200" y="123" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="1Ka-A9-LN1"/>
-                                    <constraint firstAttribute="height" constant="150" id="kh8-4w-bVp"/>
+                                    <constraint firstAttribute="width" constant="200" id="1Ka-A9-LN1"/>
+                                    <constraint firstAttribute="height" constant="200" id="kh8-4w-bVp"/>
                                 </constraints>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote of the Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ver-tq-LKJ">
-                                <rect key="frame" x="28" y="338" width="544" height="20"/>
+                                <rect key="frame" x="28" y="358" width="544" height="20"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujO-c6-hJt">
-                                <rect key="frame" x="277" y="373" width="46" height="15"/>
+                                <rect key="frame" x="277" y="393" width="46" height="15"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ver-tq-LKJ" secondAttribute="trailing" constant="12" id="VVQ-sM-syJ"/>
                             <constraint firstItem="ujO-c6-hJt" firstAttribute="top" secondItem="ver-tq-LKJ" secondAttribute="bottom" constant="15" id="eRt-nd-OBD"/>
-                            <constraint firstItem="49w-jv-y4M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="iL4-eF-mcZ"/>
+                            <constraint firstItem="49w-jv-y4M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="iL4-eF-mcZ"/>
                             <constraint firstAttribute="centerX" secondItem="ujO-c6-hJt" secondAttribute="centerX" id="ibV-v5-IVq"/>
                             <constraint firstAttribute="centerX" secondItem="49w-jv-y4M" secondAttribute="centerX" constant="1" id="kSg-XL-ELR"/>
                             <constraint firstItem="ver-tq-LKJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="q0l-z7-0Qh"/>
