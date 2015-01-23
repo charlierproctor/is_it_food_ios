@@ -64,6 +64,9 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
+        var activityIndicatorView = PBActivityIndicatorView()
+        activityIndicatorView.show(view)
+        
         picker.dismissViewControllerAnimated(true, completion: {
             if arc4random() % 2 == 0 {
                 self.view.backgroundColor = UIColor.greenColor()
@@ -78,6 +81,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
                 self.quoteLabel.text = text
             }
             self.imageView.image = image.cropToSquare()
+            activityIndicatorView.hide()
         })
         
     }
