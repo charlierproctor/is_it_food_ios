@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owI-8u-nA0" customClass="PBButton" customModule="IsItFood" customModuleProvider="target">
-                                <rect key="frame" x="209" y="448" width="181" height="57"/>
+                                <rect key="frame" x="209" y="433" width="181" height="57"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="25"/>
                                 <state key="normal" title="Check Now">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -97,7 +97,7 @@
                             <constraint firstItem="ver-tq-LKJ" firstAttribute="top" secondItem="gmH-IG-Eo0" secondAttribute="bottom" constant="35" id="sZh-yG-pTX"/>
                             <constraint firstAttribute="centerX" secondItem="gmH-IG-Eo0" secondAttribute="centerX" id="t3I-F2-lD4"/>
                             <constraint firstItem="gmH-IG-Eo0" firstAttribute="top" secondItem="49w-jv-y4M" secondAttribute="bottom" constant="31.5" id="vJ1-TL-l68"/>
-                            <constraint firstItem="owI-8u-nA0" firstAttribute="top" secondItem="ujO-c6-hJt" secondAttribute="bottom" constant="40" id="xf2-mG-PaL"/>
+                            <constraint firstItem="owI-8u-nA0" firstAttribute="top" secondItem="ujO-c6-hJt" secondAttribute="bottom" constant="25" id="xf2-mG-PaL"/>
                             <constraint firstAttribute="centerX" secondItem="owI-8u-nA0" secondAttribute="centerX" id="xlX-EK-a3Q"/>
                         </constraints>
                     </view>

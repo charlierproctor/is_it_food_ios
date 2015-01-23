@@ -72,10 +72,10 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         picker.dismissViewControllerAnimated(true, completion: {
             if arc4random() % 2 == 0 {
                 self.view.backgroundColor = UIColor.greenColor()
-                self.answerLabel.text = "YES"
+                self.answerLabel.text = "YES, IT'S FOOD"
             } else {
                 self.view.backgroundColor = UIColor.redColor()
-                self.answerLabel.text = "NO"
+                self.answerLabel.text = "NO, NOT FOOD"
             }
             self.getQuote { (author, text) -> Void in
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
