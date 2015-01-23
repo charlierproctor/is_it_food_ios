@@ -16,6 +16,8 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var checkButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var authorLabel: UILabel!
+    lazy var hasChosenAnImage = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,17 +73,25 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
             if arc4random() % 2 == 0 {
                 self.view.backgroundColor = UIColor.greenColor()
                 self.answerLabel.text = "YES"
-                self.answerLabel.font = self.answerLabel.font.fontWithSize(40)
             } else {
                 self.view.backgroundColor = UIColor.redColor()
                 self.answerLabel.text = "NO"
-                self.answerLabel.font = self.answerLabel.font.fontWithSize(40)
             }
             self.getQuote { (author, text) -> Void in
-                self.quoteLabel.text = text
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.authorLabel.text = author
+                    self.quoteLabel.text = text
+                })
+            }
+            if !self.hasChosenAnImage {
+                self.hasChosenAnImage = true
+                self.quoteLabel.hidden = false
+                self.quoteLabel.numberOfLines = 0
+                self.authorLabel.hidden = false
+                self.answerLabel.font = self.answerLabel.font.fontWithSize(40)
+                self.checkButton.setTitle("Check Again", forState: .Normal)
             }
             self.imageView.image = image.cropToSquare()
-            self.checkButton.setTitle("Check Again", forState: .Normal)
             activityIndicatorView.hide()
         })
         

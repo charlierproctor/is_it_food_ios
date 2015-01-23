@@ -12,6 +12,7 @@
         <mutableArray key="MyriadPro-Semibold.otf">
             <string>MyriadPro-Semibold</string>
             <string>MyriadPro-Semibold</string>
+            <string>MyriadPro-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -28,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owI-8u-nA0" customClass="PBButton" customModule="IsItFood" customModuleProvider="target">
-                                <rect key="frame" x="209" y="438" width="181" height="57"/>
+                                <rect key="frame" x="209" y="428" width="181" height="57"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="25"/>
                                 <state key="normal" title="Check Now">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,8 +59,8 @@
                                     <action selector="checkButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7q0-rW-xDR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Eat Or Not To Eat?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-jv-y4M">
-                                <rect key="frame" x="201" y="100" width="194.5" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Food?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-jv-y4M">
+                                <rect key="frame" x="251" y="100" width="95.5" height="22"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -71,9 +72,15 @@
                                     <constraint firstAttribute="height" constant="150" id="kh8-4w-bVp"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote of the Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ver-tq-LKJ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote of the Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ver-tq-LKJ">
                                 <rect key="frame" x="28" y="338" width="544" height="20"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujO-c6-hJt">
+                                <rect key="frame" x="277" y="373" width="46" height="15"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -81,20 +88,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="owI-8u-nA0" firstAttribute="top" secondItem="ver-tq-LKJ" secondAttribute="bottom" constant="80" id="GP0-ml-e9Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ver-tq-LKJ" secondAttribute="trailing" constant="12" id="VVQ-sM-syJ"/>
+                            <constraint firstItem="ujO-c6-hJt" firstAttribute="top" secondItem="ver-tq-LKJ" secondAttribute="bottom" constant="15" id="eRt-nd-OBD"/>
                             <constraint firstItem="49w-jv-y4M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="iL4-eF-mcZ"/>
+                            <constraint firstAttribute="centerX" secondItem="ujO-c6-hJt" secondAttribute="centerX" id="ibV-v5-IVq"/>
                             <constraint firstAttribute="centerX" secondItem="49w-jv-y4M" secondAttribute="centerX" constant="1" id="kSg-XL-ELR"/>
                             <constraint firstItem="ver-tq-LKJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="q0l-z7-0Qh"/>
                             <constraint firstItem="ver-tq-LKJ" firstAttribute="top" secondItem="gmH-IG-Eo0" secondAttribute="bottom" constant="35" id="sZh-yG-pTX"/>
                             <constraint firstAttribute="centerX" secondItem="gmH-IG-Eo0" secondAttribute="centerX" id="t3I-F2-lD4"/>
                             <constraint firstItem="gmH-IG-Eo0" firstAttribute="top" secondItem="49w-jv-y4M" secondAttribute="bottom" constant="31.5" id="vJ1-TL-l68"/>
+                            <constraint firstItem="owI-8u-nA0" firstAttribute="top" secondItem="ujO-c6-hJt" secondAttribute="bottom" constant="40" id="xf2-mG-PaL"/>
                             <constraint firstAttribute="centerX" secondItem="owI-8u-nA0" secondAttribute="centerX" id="xlX-EK-a3Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xbX-vF-cL7"/>
                     <connections>
                         <outlet property="answerLabel" destination="49w-jv-y4M" id="CQc-7k-fMP"/>
+                        <outlet property="authorLabel" destination="ujO-c6-hJt" id="jwD-2b-iPn"/>
                         <outlet property="checkButton" destination="owI-8u-nA0" id="yzJ-Wx-KoP"/>
                         <outlet property="imageView" destination="gmH-IG-Eo0" id="vrF-6d-C8P"/>
                         <outlet property="quoteLabel" destination="ver-tq-LKJ" id="xWZ-o5-eZd"/>
