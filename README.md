@@ -2,7 +2,7 @@
 
 Primary repository for iOS `Is It Food?` app.
 
-See `pushbyte/is_it_food_serv` for the server backend.
+See `charlierproctor/is_it_food_serv` for the server backend.
 
 ## The Problem
 We as humans all face one common, natural question -- **is it food?** 
